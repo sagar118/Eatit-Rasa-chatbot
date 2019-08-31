@@ -64,9 +64,13 @@ using: pip install https://pypi.python.org/packages/source/p/pythoncrfsuite/
 python-crfsuite-0.8.1.tar.gz)
 
 4. If the system asks to upgrade pip, use the following commands:
+For windows: 
 ```
-For windows: python -m pip install --upgrade pip
-For Mac: pip install pip –upgrade
+python -m pip install --upgrade pip
+```
+For Mac: 
+```
+pip install pip –upgrade
 pip install setuptools –upgrade
 ```
 
@@ -99,8 +103,8 @@ Rasa Core Installation
 cd rasa_core-master
 2. Run the following command to install the Rasa Core requirements:
 ```
-pip install -r requirements.txt
-pip install -e .
+>pip install -r requirements.txt
+>pip install -e .
 ```
 
 Installing Rasa-NLU-Trainer
@@ -110,16 +114,17 @@ We’ll download it using the npm package manager of node.js environment:
 users)
 3. After the installation, run the following command in PowerShell/ Windows Command
 Prompt
-npm i -g rasa-nlu-trainer
-For Mac OS: sudo npm i -g rasa-nlu-trainer.
-
+```
+>npm i -g rasa-nlu-trainer
 ```
 
-#### How to find rasa_core and rasa_nlu version
+For Mac OS: sudo npm i -g rasa-nlu-trainer.
 
+#### How to find rasa_core and rasa_nlu version
 ```
 >python -c "import rasa_nlu; print(rasa_nlu.__version__);"
 >python -c "import rasa_core; print(rasa_core.__version__);"
+```
 
 ## Train the nlu data & train the core conversational flow using the command line
 
