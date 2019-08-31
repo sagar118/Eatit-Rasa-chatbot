@@ -111,8 +111,8 @@ class EmailRestaurantDetails(Action):
 		to = [email_id]
 		body = result_of_last_query
 
-		gmail_user = 'eatit.foodie@gmail.com'
-		gmail_password = 'Eatit118'
+		gmail_user = '<gmail-email-id>'
+		gmail_password = '<gmail-password>'
 
 		email_text = "The details of all the restaurants you inquired \n \n"
 
