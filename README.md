@@ -1,10 +1,14 @@
 # Eatit Restaurant Bot
-An Indian startup named 'Foodie' wants to build a conversational bot (chatbot) which can help users discover restaurants across several Indian cities. 
+A conversational bot (chatbot) which can help users discover restaurants across several Indian cities. 
 The main purpose of the bot is to help users discover restaurants quickly and efficiently and to provide a good restaurant discovery experience. 
 Zomato apis are used for searching the restaurants. https://developers.zomato.com/documentation#/
 
+### Important Notes:
+Eatit works only in Tier-1 and Tier-2 cities. You can use the current HRA classification of the cities from here: https://en.wikipedia.org/wiki/Classification_of_Indian_cities. Under the section 'current classification' on this page, the table categorizes cities as X, Y, and Z. Consider 'X ' cities as tier-1 and 'Y' as tier-2. 
+The chatbot provides results for tier-1 and tier-2 cities only, while for tier-3 cities, it will reply back with something like "We do not operate in that area yet".
+
 ### Prerequisites
-python 3.6.x(except 3.6.9)
+Python 3.6.x(except 3.6.9)
 Visual studio for python development 
 Rasa_nlu version 0.12.3
 Rasa_core version 0.10.1 
@@ -23,7 +27,7 @@ Right click the command prompt and select Run as Administrator.
 For Windows:
   - Go the Microsoft Visual Studio link: https://visualstudio.microsoft.com/
 	Select the ‘Visual Studio IDE’ and from the dropdown, select the ‘Community version 2017’:
-  - Install the downloaded file. Once the Visual Studio is installed, select the Python Development under ‘Web & Cloud’ Environment. Also, on right side (Summary), in optional menu select the ‘Python native development tools’.
+  - Install the downloaded file. Once the Visual Studio is installed, select the Python Development under ‘Web & Cloud’ Environment. Also, on the right side (Summary), in the optional menu select the ‘Python native development tools’.
   - Click on install.
 
 For Mac:
@@ -56,7 +60,7 @@ run the above commands through ‘x64 Native Tools Command Prompt for VS 2017’
 using: pip install https://pypi.python.org/packages/source/p/pythoncrfsuite/
 python-crfsuite-0.8.1.tar.gz)
 
-4. If system asks to upgrade pip, use the following commands:
+4. If the system asks to upgrade pip, use the following commands:
 ```
 For windows: python -m pip install --upgrade pip
 For Mac: pip install pip –upgrade
@@ -98,7 +102,7 @@ pip install -e .
 
 Installing Rasa-NLU-Trainer
 1. Rasa has an inbuilt GUI tool for adding/editing the training examples: rasa-nlutrainer.
-We’ll download it using npm package manager of node.js environment:
+We’ll download it using the npm package manager of node.js environment:
 2. Download node.js from https://nodejs.org/en/ (Version: Recommended for most
 users)
 3. After the installation, run the following command in PowerShell/ Windows Command
@@ -114,10 +118,7 @@ For Mac OS: sudo npm i -g rasa-nlu-trainer.
 >python -c "import rasa_nlu; print(rasa_nlu.__version__);"
 >python -c "import rasa_core; print(rasa_core.__version__);"
 
-#### Linking spacy
-python -m spacy download en
-
-## Train the nlu data & train the core conversational flow using command line
+## Train the nlu data & train the core conversational flow using the command line
 
 ```
 cd path <path to Rasa_basic_folder>
@@ -153,7 +154,7 @@ Using ngrok (https://ngrok.com/download) as a webhook deploy the bot on slack(ht
 ```
 >python run_app.py  
 ```
-Bot can be accessed from slack. 
+The bot can be accessed from slack. 
 
 ## Built With
 
