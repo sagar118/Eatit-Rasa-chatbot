@@ -9,9 +9,6 @@ import warnings
 nlu_interpreter = RasaNLUInterpreter('./models/nlu/default/restaurantnlu')
 agent = Agent.load('./models/dialogue', interpreter = nlu_interpreter)
 
-input_channel = SlackInput('<app verification token>', 
-							'<bot verification token>', 
-							'<slack verification token>', 
-							True)
+input_channel = SlackInput('<app verification token>', '<bot verification token>', '<slack verification token>', True)
 
 agent.handle_channel(HttpInputChannel(5004, '/', input_channel))
