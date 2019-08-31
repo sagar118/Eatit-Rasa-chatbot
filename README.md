@@ -4,8 +4,10 @@ The main purpose of the bot is to help users discover restaurants quickly and ef
 Zomato apis are used for searching the restaurants. https://developers.zomato.com/documentation#/
 
 ### Important Notes:
-Eatit works only in Tier-1 and Tier-2 cities. You can use the current HRA classification of the cities from here: https://en.wikipedia.org/wiki/Classification_of_Indian_cities. Under the section 'current classification' on this page, the table categorizes cities as X, Y, and Z. Consider 'X ' cities as tier-1 and 'Y' as tier-2. 
+- Eatit works only in Tier-1 and Tier-2 cities. You can use the current HRA classification of the cities from here: https://en.wikipedia.org/wiki/Classification_of_Indian_cities. Under the section 'current classification' on this page, the table categorizes cities as X, Y, and Z. Consider 'X ' cities as tier-1 and 'Y' as tier-2. 
 The chatbot provides results for tier-1 and tier-2 cities only, while for tier-3 cities, it will reply back with something like "We do not operate in that area yet".
+
+- For email functionality: enter your gmail email id and password in the EmailRestaurantDetails function in actions.py file.
 
 ### Prerequisites
 Python 3.6.x(except 3.6.9)
