@@ -26,7 +26,11 @@ Right click the command prompt and select Run as Administrator.
 2. Visual Studio:
 For Windows:
   - Go the Microsoft Visual Studio link: https://visualstudio.microsoft.com/
+<<<<<<< HEAD
   Select the ‘Visual Studio IDE’ and from the dropdown, select the ‘Community version 2017’:
+=======
+	Select the ‘Visual Studio IDE’ and from the dropdown, select the ‘Community version 2017’:
+>>>>>>> da44ed8805ac3dd7c1a6e974d7bfc7f2600b42fc
   - Install the downloaded file. Once the Visual Studio is installed, select the Python Development under ‘Web & Cloud’ Environment. Also, on the right side (Summary), in the optional menu select the ‘Python native development tools’.
   - Click on install.
 
