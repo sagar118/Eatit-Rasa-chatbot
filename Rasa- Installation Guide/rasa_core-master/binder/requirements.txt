@@ -19,7 +19,7 @@ fbmessenger==5.1.0
 pykwalify<=1.6.0
 coloredlogs==10.0
 ruamel.yaml==0.15.37
-flask==1.0.2
+flask==2.2.5
 flask_cors==3.0.9
 scikit-learn==0.19.1
 rasa_nlu~=0.12.0
